@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Registration Form | SPK Kredit</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper" style="background-image: url('images/Online-Registration-3.jpg');">
+			<div class="inner">
+				<div class="image-holder">
+					<img src="images/Online-Registration-3.jpg" alt="">
+				</div>
+				<form action="/postregister" method='post'>
+					<h3>Registration Form</h3>
+					{{ csrf_field() }}
+					<div class="form-wrapper">
+						<input type="text" placeholder="No. KTP" class="form-control" name="noKtp" id="register-noKtp">
+						<i class="zmdi zmdi-card"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="text" placeholder="Nama Lengkap" class="form-control" name="nama" id="register-nama">
+						<i class="zmdi zmdi-assignment-account"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="text" placeholder="Username" class="form-control" name="name" id="register-name">
+						<i class="zmdi zmdi-account"></i>
+					</div>
+					<div class="form-group">
+						<input type="email" placeholder="Email" class="form-control" name="email" id="register-email">
+						<input type="text" placeholder="No. Telp" class="form-control" name="noTelp" id="register-noTelp">
+					</div>
+					<div class="form-wrapper">
+						<input type="text" placeholder="Alamat" class="form-control" name="alamat" id="register-alamat">
+						<i class="zmdi zmdi-pin"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="password" placeholder="Password" class="form-control" name="password" id="password">
+						<i class="zmdi zmdi-lock"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="password" placeholder="Konfirmasi Password" class="form-control" name="confirm" id="register-confirm">
+						<i class="zmdi zmdi-repeat"></i>
+					</div>
+					<div class="form-wrapper">
+						<select name="" class="form-control" name="jenisKelamin" id="register-jenisKelamin">
+							<option value="" disabled selected>Jenis Kelamin</option>
+							<option value="Laki-Laki">Laki-Laki</option>
+							<option value="Perempuan">Perempuan</option>
+						</select>
+						<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+					</div>
+					<button>Register
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+				</form>
+			</div>
+		</div>
+		
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
